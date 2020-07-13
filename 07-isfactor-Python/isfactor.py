@@ -6,8 +6,10 @@
 
 def fun_isfactor(f, n):
     if n == 0:
+        print("true")
         return True
     if f == 0:
+        print("False")
         return False
     if f % n == 0:
         print("true")
@@ -16,4 +18,4 @@ def fun_isfactor(f, n):
     return False
 
 
-fun_isfactor(2, 5)
+fun_isfactor(6, 0)
