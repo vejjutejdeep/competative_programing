@@ -9,8 +9,10 @@ import math
 def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
     # your code goes here
     intersect = True
-    distance = round(math.sqrt((x2 - x1) ** 2) + (y2 - y1) ** 2)
-    if r1 + r2 > distance:
+    distance = math.ceil(math.sqrt((x1 - x2) ** 2) + (y1 - y2) ** 2)
+    if r1 + r2 < distance:
         intersect = False
-        print(intersect)
+    else:
+        intersect = True
+    print(intersect)
     return intersect
