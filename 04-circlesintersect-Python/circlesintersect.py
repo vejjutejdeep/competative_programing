@@ -14,5 +14,6 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
         intersect = False
     else:
         intersect = True
+        print(distance)
     print(intersect)
     return intersect
