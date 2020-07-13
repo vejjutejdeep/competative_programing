@@ -8,4 +8,5 @@
 
 def show_excitement():
     # Your code goes here!
+    print("excited")
     pass
