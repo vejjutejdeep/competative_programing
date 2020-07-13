@@ -8,8 +8,14 @@ def fun_isfactor(f, n):
     if n == 0:
         print("true")
         return True
+    if f == 0:
+        print("false")
+        return False
     if f % n == 0:
         print("true")
         return True
-        print("false")
+    print("false")
     return False
+
+
+fun_isfactor(2, 5)
