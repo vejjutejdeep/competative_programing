@@ -10,5 +10,10 @@ def fun_isfactor(f, n):
     if f == 0:
         return False
     if f % n == 0:
+        print("true")
         return True
+    print("False")
     return False
+
+
+fun_isfactor(2, 5)
