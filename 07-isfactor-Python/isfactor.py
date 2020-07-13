@@ -6,7 +6,10 @@
 
 def fun_isfactor(f, n):
     if n == 0:
+        print("true")
         return True
-        if f % n == 0:
-            return True
+    if f % n == 0:
+        print("true")
+        return True
+        print("false")
     return False
