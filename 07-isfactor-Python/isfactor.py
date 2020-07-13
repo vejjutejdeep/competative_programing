@@ -16,6 +16,3 @@ def fun_isfactor(f, n):
         return True
     print("False")
     return False
-
-
-fun_isfactor(6, 0)
