@@ -1,10 +1,11 @@
-import os,sys
-sys.path.append(os.getcwd())
-from eggcartons import fun_eggcartons
 import pytest
+from eggcartons import fun_eggcartons
+import os
+import sys
+sys.path.append(os.getcwd())
 
 
-@pytest.mark.parametrize('check, result',[
+@pytest.mark.parametrize('check, result', [
     (fun_eggcartons(0), 0), (fun_eggcartons(12), 1),
     (fun_eggcartons(10), 1), (fun_eggcartons(13), 2),
     (fun_eggcartons(24), 2), (fun_eggcartons(25), 3)
