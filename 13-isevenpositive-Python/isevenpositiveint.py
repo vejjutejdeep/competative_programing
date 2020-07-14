@@ -6,7 +6,9 @@
 
 def isevenpositiveint(x):
     # your code goes here
-    check = str(x).isnumeric()
+    string = isinstance(x, str)
+    if string == False:
+        check = str(x).isnumeric()
     if check == False:
         return False
     if x < 0:
