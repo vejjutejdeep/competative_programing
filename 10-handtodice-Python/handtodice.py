@@ -13,3 +13,6 @@ def handtodice(hand):
         hand = hand // 10
     print(lis)
     return tuple(lis)
+
+
+handtodice(123)
