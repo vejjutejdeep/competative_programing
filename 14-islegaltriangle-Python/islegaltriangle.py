@@ -9,3 +9,6 @@ def islegaltriangle(s1, s2, s3):
     # your code goes here
     if s1 < 0 or s2 < 0 or s3 < 0:
         return False
+    if max(s1, s2, s3) < (s1 + s2 + s3 - max(s1, s2, s3)):
+        return True
+    return False
