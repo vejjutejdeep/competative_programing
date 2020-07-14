@@ -11,4 +11,5 @@ def handtodice(hand):
     while (hand != 0):
         lis.append(hand % 10)
         hand = hand // 10
+    print(lis)
     return tuple(lis)
