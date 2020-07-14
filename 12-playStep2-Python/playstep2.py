@@ -29,5 +29,18 @@
 # Hint: Also, remember to use % to get the one's digit, and use //= to get rid of the one's digit.
 
 def playstep2(hand, dice):
-	# your code goes here
-	pass
+    saperated_hand = list(handtodice(hand))
+    saperated_dice = list(handtodice(dice))
+    lenght = len(saperated_dice)
+    while lenght > (len(saperated_dice) / 2):
+
+
+def handtodice(hand):
+    lis = []
+# your code goes here
+    while (hand != 0):
+        lis.append(hand % 10)
+        hand = hand // 10
+    lis.reverse()
+    print(lis)
+    return tuple(lis)
