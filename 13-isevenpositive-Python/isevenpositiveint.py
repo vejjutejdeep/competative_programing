@@ -7,12 +7,21 @@
 def isevenpositiveint(x):
     # your code goes here
     string = isinstance(x, str)
-    if string == False:
-        check = str(x).isnumeric()
+    if string == True:
+        print("False")
+        return False
+    check = str(x).isnumeric()
     if check == False:
+        print("False")
         return False
     if x < 0:
+        print("False")
         return False
     if x % 2 != 0:
+        print("False")
         return False
+    print("True")
     return True
+
+
+isevenpositiveint(1)
