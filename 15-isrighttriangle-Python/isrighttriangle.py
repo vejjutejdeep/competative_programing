@@ -18,8 +18,10 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
     s3 = distance(x1, y1, x3, y3)
     hyp = max(s1, s2, s3)
     side1 = min(s1, s2, s3)
+    print("hyp  ", hyp)
+    print("side1 side3 ", side1, (s1 + s2 + s3 - side1 - hyp))
     print("side 1 side 2 side3 ", s1, s2, s3)
-    if (hyp) <= ((side1) + ((s1 + s2 + s3 - side1 - hyp))):
+    if (hyp) <= (side1 + (s1 + s2 + s3 - side1 - hyp)):
         print("False")
         return False
     print("True")
