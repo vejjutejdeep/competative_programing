@@ -21,11 +21,11 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
     print("hyp  ", hyp)
     print("side1 side3 ", side1, (s1 + s2 + s3 - side1 - hyp))
     print("side 1 side 2 side3 ", s1, s2, s3)
-    if (hyp) >= (side1 + (s1 + s2 + s3 - side1 - hyp)):
+    if (hyp ** 2) == ((side1 ** 2) + ((s1 + s2 + s3 - side1 - hyp) ** 2)):
         print("False")
         return False
     print("True")
     return True
 
 
-isrighttriangle(13, -1, -9, 3, -3, -9)
+isrighttriangle(6, 1, 0, 4, -1, -7)
