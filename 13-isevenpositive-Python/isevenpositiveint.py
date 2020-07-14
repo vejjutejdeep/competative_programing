@@ -5,5 +5,12 @@
 # than crashing), and isevenpositiveint(123456) returns True.
 
 def isevenpositiveint(x):
-	# your code goes here
-	pass
+    # your code goes here
+    check = str(x).isnumeric()
+    if check == False:
+        return False
+    if x < 0:
+        return False
+    if x % 2 != 0:
+        return False
+    return True
