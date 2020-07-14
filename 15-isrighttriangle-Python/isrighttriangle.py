@@ -7,6 +7,10 @@
 import math
 
 
+def distance(x1, y1, x2, y2,):
+    return round(math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2))
+
+
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
     # your code goes here
     s1 = distance(x1, y1, x2, y2)
@@ -14,10 +18,11 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
     s3 = distance(x1, y1, x3, y3)
     hyp = max(s1, s2, s3)
     side1 = min(s1, s2, s3)
-    if (hyp ** 2) == (side1 ** 2) + ((s1 + s2 + s3 - side1 - hyp) ** 2):
-        return True
-    return False
+    if (hyp ** 2) != (side1 ** 2) + ((s1 + s2 + s3 - side1 - hyp) ** 2):
+        print("False")
+        return False
+    print("True")
+    return True
 
 
-def distance(x1, y1, x2, y2,):
-    return round(math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2))
+isrighttriangle(13, -1, -9, 3, -3, -9)
