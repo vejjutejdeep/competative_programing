@@ -24,4 +24,4 @@ def isevenpositiveint(x):
     return True
 
 
-isevenpositiveint(-2)
+isevenpositiveint(None)
