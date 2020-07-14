@@ -26,4 +26,4 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
     return True
 
 
-isrighttriangle(13, -1, -9, 3, -3, -9)
+isrighttriangle(1, 2, 5, 4, -3, 0)
