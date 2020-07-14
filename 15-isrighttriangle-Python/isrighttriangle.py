@@ -17,8 +17,10 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
     s2 = distance(x2, y2, x3, y3)
     s3 = distance(x1, y1, x3, y3)
     if (s1*s1 + s2*s2 == s3*s3) or (s2*s2 + s3*s3 == s1*s1) or (s1*s1 + s3*s3 == s2*s2):
+        print("True")
         return True
+    print("False")
     return False
 
 
-isrighttriangle(6, 1, 0, 4, -1, -7)
+isrighttriangle(13, -1, -9, 3, -3, -9)
