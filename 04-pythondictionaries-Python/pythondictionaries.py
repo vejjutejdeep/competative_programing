@@ -30,8 +30,8 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations = {'North America': {'USA': ['Mountain View', 'ATLANA']}, 'Asia': {
-    'INDIA': ['BANGALORE'], 'CHINA': ['Shanghai']}, 'AFRICA': {'EGPYT': ['CARIO']}}
+locations = {'North America': {'USA': ['Mountain View', 'Atlanta']}, 'Asia': {
+    'INDIA': ['Bangalore'], 'CHINA': ['Shanghai']}, 'AFRICA': {'EGPYT': ['CARIO']}}
 
 
 def sortUSA():
