@@ -19,9 +19,10 @@ def isperfectsquare(n):
         n = int(n)
         if (n < 0):
             return False
-        return (type(math.sqrt(n)) == int)
+        return ()
     return False
 
 
+isperfectsquare(625)
 isperfectsquare(100)
 isperfectsquare("100")
