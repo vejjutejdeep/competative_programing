@@ -14,4 +14,4 @@ def lineintersection(m1, b1, m2, b2):
     return x
 
 
-lineintersection(4, 13, 3, 17)
+lineintersection(4, 13, 8, 17)
