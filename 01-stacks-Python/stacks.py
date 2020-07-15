@@ -62,8 +62,9 @@ class stack(object):
 
     def pop(self):
         "Pop (remove) the first element off the top of the stack and return it"
-        self.ll.delete_first()
+        val = self.ll.delete_first()
         self.ll.print_ll()
+        return val
 
 
 e1 = Element(1)
