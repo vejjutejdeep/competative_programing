@@ -31,7 +31,7 @@ Asian City - Country
 Asian City - Country"""
 
 locations = {'North America': {'USA': ['Mountain View', 'Atlanta']}, 'Asia': {
-    'INDIA': ['Bangalore'], 'CHINA': ['Shanghai']}, 'AFRICA': {'EGPYT': ['CARIO']}}
+    'India': ['Bangalore'], 'China': ['Shanghai']}, 'Africa': {'EGPYT': ['CARIO']}}
 
 
 def sortUSA():
