@@ -37,10 +37,13 @@ locations = {'North America': {'USA': ['Mountain View', 'ATLANA']}, 'Asia': {
 def sortUSA():
     for ele in locations:
         d = locations[ele]
+        print(d)
         if ('USA' in ele):
             city = sorted(d['USA'])
             print(city)
             return city
+        else:
+            print('None')
 
 
 sortUSA()
