@@ -8,7 +8,9 @@ import math
 def trianglearea(s1, s2, s3):
     # your code goes here
     if max(s1, s2, s3) > (s1 + s2 + s3 - max(s1, s2, s3)):
+        print(0)
         return 0
     per = (s1 + s2 + s3) / 2
     area = math.sqrt(per * (per - s1) * (per - s2) * (per - s3))
+    print(area)
     return area
