@@ -24,3 +24,4 @@ def isperfectsquare(n):
 
 
 isperfectsquare(100)
+isperfectsquare("100")
