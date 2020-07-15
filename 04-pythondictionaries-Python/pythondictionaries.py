@@ -38,7 +38,7 @@ def sortUSA():
     for ele in locations:
         d = locations[ele]
         print(d)
-        if ('USA' in ele):
+        if ('USA' in d):
             city = sorted(d['USA'])
             print(city)
             return city
