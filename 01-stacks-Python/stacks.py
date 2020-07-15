@@ -14,7 +14,7 @@ class Element(object):
 
 
 class LinkedList(object):
-    def __init__(self, head=None):
+    def __init__(self, head=object):
         self.head = head
 
     def append(self, new_element):
@@ -37,11 +37,11 @@ class LinkedList(object):
     def delete_first(self):
         "Delete the first (head) element in the LinkedList as return it"
         if self.head:
-            self.head.next = self.head
+            self.head = self.head.next
 
 
 class stack(object):
-    def __init__(self, top=None):
+    def __init__(self, top=object):
         self.ll = LinkedList(top)
 
     def push(self, new_element):
