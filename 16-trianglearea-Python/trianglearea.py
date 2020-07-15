@@ -14,3 +14,6 @@ def trianglearea(s1, s2, s3):
     area = math.sqrt(per * (per - s1) * (per - s2) * (per - s3))
     print(area)
     return area
+
+
+trianglearea(4, 13, 15)
