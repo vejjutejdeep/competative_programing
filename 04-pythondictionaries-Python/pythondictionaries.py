@@ -32,7 +32,4 @@ Asian City - Country"""
 
 locations = {'North America': {'USA': ['Mountain View']}, 'Asia': {
     'INDIA': ['BANGALORE'], 'CHINA': ['Shanghai']}, 'AFRICA': {'EGPYT': ['CARIO']}}
-for ele in locations:
-    for nation in ele:
-        if nation == 'USA':
-            print(nation.value().sort())
+print(locations)
