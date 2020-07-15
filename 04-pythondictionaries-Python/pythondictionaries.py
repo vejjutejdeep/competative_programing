@@ -43,3 +43,18 @@ def sortUSA():
             return city
         else:
             print('None')
+
+
+def alphaAsia():
+    city = []
+    if 'Asia' in locations:
+        nation = locations['Asia']
+        for ele in nation:
+            city2 = nation[ele]
+            for j in city2:
+                city.append(j + '-' + ele)
+    print(city)
+    return city
+
+
+alphaAsia()
