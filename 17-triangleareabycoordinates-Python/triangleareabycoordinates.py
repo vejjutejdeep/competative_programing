@@ -5,5 +5,11 @@
 # the triangleArea function you just wrote above.
 
 def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
-	# your code goes here
-	pass
+    # your code goes here
+    A = ((x1 * y2) + (x2 * y3) + (x3 * y1) -
+         (x1 * y3) - (x2 * y1) - (x3 * y2))/2
+    print(A)
+    return A
+
+
+triangleareabycoordinates(23, 30, 15, 15, 50, 25)
