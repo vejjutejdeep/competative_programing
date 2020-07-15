@@ -30,6 +30,17 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations = {'North America': {'USA': ['Mountain View']}, 'Asia': {
+locations = {'North America': {'USA': ['Mountain View', 'ATLANA']}, 'Asia': {
     'INDIA': ['BANGALORE'], 'CHINA': ['Shanghai']}, 'AFRICA': {'EGPYT': ['CARIO']}}
-print(locations)
+
+
+def sortUSA():
+    for ele in locations:
+        d = locations[ele]
+        if ('USA' in ele):
+            city = sorted(d['USA'])
+            print(city)
+            return city
+
+
+sortUSA()
