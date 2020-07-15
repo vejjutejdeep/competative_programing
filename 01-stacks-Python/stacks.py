@@ -39,8 +39,10 @@ class LinkedList(object):
         if self.head:
             current = self.head
             self.head = self.head.next
-        current.next = None
-        return current.value
+            current.next = None
+            return current.value
+        else:
+            return None
 
     def print_ll(self):
         if self.head:
