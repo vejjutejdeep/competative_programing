@@ -40,7 +40,7 @@ class LinkedList(object):
             current = self.head
             self.head = self.head.next
             current.next = None
-            return current.value
+            return current
         else:
             return None
 
@@ -67,12 +67,3 @@ class stack(object):
         val = self.ll.delete_first()
         self.ll.print_ll()
         return val
-
-
-e1 = Element(1)
-e2 = Element(2)
-stack = stack(e1)
-
-stack.push(e2)
-
-print(stack.pop())
