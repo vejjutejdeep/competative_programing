@@ -12,14 +12,15 @@ def isperfectsquare(n):
             return False
         print(math.sqrt(n))
         print((math.sqrt(n)) == int(math.sqrt(n)))
-        return (type(math.sqrt(n)) == int(math.sqrt(n)))
+        return ((math.sqrt(n)) == int(math.sqrt(n)))
     elif (type(n) == float):
         return False
     if(n.isnumeric()):
         n = int(n)
         if (n < 0):
             return False
-        return ()
+        print((math.sqrt(n)) == int(math.sqrt(n)))
+        return ((math.sqrt(n)) == int(math.sqrt(n)))
     return False
 
 
