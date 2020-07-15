@@ -11,8 +11,8 @@ def isperfectsquare(n):
         if (n < 0):
             return False
         print(math.sqrt(n))
-        print(type(math.sqrt(n)) == int)
-        return (type(math.sqrt(n)) == int)
+        print((math.sqrt(n)) == int(math.sqrt(n)))
+        return (type(math.sqrt(n)) == int(math.sqrt(n)))
     elif (type(n) == float):
         return False
     if(n.isnumeric()):
