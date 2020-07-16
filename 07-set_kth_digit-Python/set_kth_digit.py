@@ -19,6 +19,7 @@ def combine(lis):
     su = 0
     for ele in lis:
         su = su + ele * (10 ** l)
+        print(su)
     print(su)
 
 
