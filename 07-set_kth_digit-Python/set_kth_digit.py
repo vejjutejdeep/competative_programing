@@ -15,4 +15,4 @@ def divide(n):
 
 
 def fun_set_kth_digit(n, k, d):
-    print(divide(n))
+    divide(n)
