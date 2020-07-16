@@ -10,8 +10,6 @@ def divide(n):
     while(n != 0):
         lis.append(n % 10)
         n = n // 10
-        print(n)
-
     print(lis[::-1])
     return lis.reverse()
 
