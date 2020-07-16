@@ -19,3 +19,6 @@ def fun_pascaltrianglevalue(row, col):
         if (row != 0):
             a[ele].append(1)
     return a[row][col]
+
+
+print(fun_pascaltrianglevalue(5, 2))
