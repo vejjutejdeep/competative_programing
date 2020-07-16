@@ -4,15 +4,25 @@ you'd like! Try to write each one in as
 few lines as possible.
 Make sure you pass the test cases too!"""
 
-class Queue:
-    def __init__(self, head=None):
+
+class Queue():
+    def __init__(self, head):
         self.storage = [head]
 
     def enqueue(self, new_element):
-        pass
+        self.storage.append(new_element)
 
     def peek(self):
-        pass 
+        return self.storage[-1]
 
     def dequeue(self):
-        pass
+        res = self.storage[-1]
+        self.storage[-1] = 0
+        return res
+
+
+q = Queue(1)
+q.enqueue(2)
+q.enqueue(3)
+print(q.peek())
+print(q.dequeue())
