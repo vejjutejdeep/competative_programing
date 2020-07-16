@@ -4,6 +4,18 @@
 # the kth digit replaced with d. Counting starts at 0 and goes right-to-left,
 # so the 0th digit is the rightmost digit.
 
+def divide(n):
+    lis = []
+    print(n)
+    while(n != 0):
+        lis.append(n % 10)
+        n = n // 10
+    print(lis)
+    return lis
+
 
 def fun_set_kth_digit(n, k, d):
     divide(n)
+
+
+fun_set_kth_digit(468, 0, 1)
