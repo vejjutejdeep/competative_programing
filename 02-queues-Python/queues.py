@@ -24,15 +24,17 @@ class Queue():
     def showele(self):
         for pos in self.storage:
             print(pos, end=" ")
+        print()
 
 
 q = Queue(1)
 q.enqueue(2)
 q.enqueue(3)
-print(q.peek())
-print(q.dequeue())
 q.showele()
-q.enqueue(4)
-print(q.dequeue())
-q.showele()
-print("two ", q.dequeue())
+# print(q.peek())
+# print(q.dequeue())
+# q.showele()
+# q.enqueue(4)
+# print(q.dequeue())
+# q.showele()
+# print("two ", q.dequeue())
