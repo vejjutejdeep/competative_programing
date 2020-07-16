@@ -13,11 +13,12 @@ class Queue():
         self.storage.append(new_element)
 
     def peek(self):
-        return self.storage[-1]
+        return self.storage[0]
 
     def dequeue(self):
-        res = self.storage[-1]
-        self.storage[-1] = 0
+        res = self.storage[0]
+        for pos in range(len(self.storage) - 2):
+            self.storage[pos] = self.storage[pos + 1]
         return res
 
 
@@ -25,4 +26,7 @@ q = Queue(1)
 q.enqueue(2)
 q.enqueue(3)
 print(q.peek())
+print(q.dequeue())
+q.enqueue(4)
+print(q.dequeue())
 print(q.dequeue())
