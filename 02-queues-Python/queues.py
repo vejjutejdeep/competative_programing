@@ -18,11 +18,12 @@ class Queue():
     def dequeue(self):
         res = self.storage[0]
         for pos in range(len(self.storage) - 1):
-            self.storage[pos] = self.storage[pos + 1]
+            self.storage[pos - 1] = self.storage[pos]
         return res
 
-    # def showele(self):
-    #     for pos in self.
+    def showele(self):
+        for pos in self.storage:
+            print(pos, end=" ")
 
 
 q = Queue(1)
@@ -30,6 +31,8 @@ q.enqueue(2)
 q.enqueue(3)
 print(q.peek())
 print(q.dequeue())
+q.showele()
 q.enqueue(4)
 print(q.dequeue())
+q.showele()
 print("two ", q.dequeue())
