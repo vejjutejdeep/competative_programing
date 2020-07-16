@@ -11,11 +11,14 @@ def divide(n):
         lis.append(n % 10)
         n = n // 10
     print(lis[::-1])
-    return lis.reverse()
+    return lis[::-1]
 
 
 def fun_set_kth_digit(n, k, d):
-    divide(n)
+    lis = divide(n)
+
+    lis[k] = d
+    print(lis)
 
 
 fun_set_kth_digit(468, 0, 1)
