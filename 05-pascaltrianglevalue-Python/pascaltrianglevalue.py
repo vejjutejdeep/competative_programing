@@ -7,10 +7,10 @@
 
 
 def fun_pascaltrianglevalue(row, col):
-    if (row > col):
+    if (row < col):
         return 0
     a = []
-    for ele in range(row):
+    for ele in range(row + 1):
         a.append([])
         print(a)
         a[ele].append(1)
@@ -18,7 +18,8 @@ def fun_pascaltrianglevalue(row, col):
             a[ele].append(a[ele - 1][j - 1] + a[ele - 1][j])
         if (row != 0):
             a[ele].append(1)
+        print(a)
     return a[row][col]
 
 
-print(fun_pascaltrianglevalue(5, 2))
+print(fun_pascaltrianglevalue(7, 4))
