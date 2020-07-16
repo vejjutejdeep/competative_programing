@@ -17,7 +17,7 @@ class Queue():
 
     def dequeue(self):
         res = self.storage[0]
-        for pos in range(len(self.storage) - 1):
+        for pos in range(len(self.storage) - 1, 0, -1):
             self.storage[pos - 1] = self.storage[pos]
         return res
 
@@ -31,9 +31,9 @@ q = Queue(1)
 q.enqueue(2)
 q.enqueue(3)
 q.showele()
-# print(q.peek())
-# print(q.dequeue())
-# q.showele()
+print(q.peek())
+print(q.dequeue())
+q.showele()
 # q.enqueue(4)
 # print(q.dequeue())
 # q.showele()
