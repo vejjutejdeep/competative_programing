@@ -10,8 +10,10 @@ def divide(n):
     while(n != 0):
         lis.append(n % 10)
         n = n // 10
-    print(lis)
-    return lis
+        print(n)
+
+    print(lis[::-1])
+    return lis.reverse()
 
 
 def fun_set_kth_digit(n, k, d):
