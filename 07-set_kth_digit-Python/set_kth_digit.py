@@ -14,18 +14,26 @@ def divide(n):
     return lis[::-1]
 
 
+def combine(lis):
+    l = len(lis) - 1
+    su = 0
+    for ele in lis:
+        su = su + ele * (10 ** l)
+    print(su)
+
+
 def fun_set_kth_digit(n, k, d):
     lis = divide(n)
     if len(lis) <= k:
         lis.append(0)
         for pos in range(len(lis) - 1, 0, -1):
             lis[pos] = lis[pos - 1]
-            print(lis)
         lis[0] = d
         print(lis)
     else:
         lis[k] = d
         print(lis)
+    combine(lis)
 
 
-fun_set_kth_digit(468, 3, 1)
+fun_set_kth_digit(468, 0, 1)
