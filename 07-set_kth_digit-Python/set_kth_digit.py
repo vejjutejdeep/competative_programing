@@ -10,15 +10,22 @@ def divide(n):
     while(n != 0):
         lis.append(n % 10)
         n = n // 10
-    print(lis[::-1])
+    # print(lis[::-1])
     return lis[::-1]
 
 
 def fun_set_kth_digit(n, k, d):
     lis = divide(n)
+    if len(lis) - 1 < k:
+        lis.append(0)
+        for pos in range(len(lis) - 1):
+            lis[pos + 1] = lis[pos]
+            print(lis)
+        lis[0] = d
+        print(lis)
+    else:
+        lis[k] = d
+        print(lis)
 
-    lis[k] = d
-    print(lis)
 
-
-fun_set_kth_digit(468, 0, 1)
+fun_set_kth_digit(1468, 3, 1)
