@@ -20,7 +20,7 @@ def fun_set_kth_digit(n, k, d):
         lis.append(0)
         for pos in range(len(lis) - 1):
             lis[pos + 1] = lis[pos]
-            print(lis)
+            # print(lis)
         lis[0] = d
         print(lis)
     else:
