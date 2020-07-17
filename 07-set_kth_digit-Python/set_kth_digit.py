@@ -11,7 +11,7 @@ def divide(n):
         lis.append(n % 10)
         n = n // 10
     # print(lis[::-1])
-    return lis[::-1]
+    return lis
 
 
 def combine(lis):
@@ -36,7 +36,9 @@ def fun_set_kth_digit(n, k, d):
     else:
         lis[k] = d
         print(lis)
+        lis[::-1]
     re = combine(lis)
     return re
+
 
 fun_set_kth_digit(468, 0, 1)
