@@ -31,6 +31,7 @@ def fun_set_kth_digit(n, k, d):
         lis.append(0)
         for pos in range(len(lis) - 1, 0, -1):
             lis[pos] = lis[pos - 1]
+        lis = lis[::-1]
         lis[0] = d
         print(lis)
     else:
@@ -39,3 +40,5 @@ def fun_set_kth_digit(n, k, d):
         lis = lis[::-1]
     re = combine(lis)
     return re
+
+fun_set_kth_digit(468, 3, 1)
