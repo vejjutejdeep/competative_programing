@@ -19,9 +19,9 @@ def combine(lis):
     su = 0
     for ele in lis:
         su = su + ele * (10 ** l)
-        print(su)
+        # print(su)
         l -= 1
-    print(su)
+    # print(su)
     return su
 
 
@@ -32,13 +32,14 @@ def fun_set_kth_digit(n, k, d):
         for pos in range(len(lis) - 1, 0, -1):
             lis[pos] = lis[pos - 1]
         lis = lis[::-1]
-        lis[0] = d
         print(lis)
+        lis[0] = d
     else:
         lis[k] = d
         print(lis)
         lis = lis[::-1]
     re = combine(lis)
     return re
+
 
 fun_set_kth_digit(468, 3, 1)
