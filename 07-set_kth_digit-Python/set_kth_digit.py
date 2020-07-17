@@ -36,9 +36,6 @@ def fun_set_kth_digit(n, k, d):
     else:
         lis[k] = d
         print(lis)
-        lis[::-1]
+        lis = lis[::-1]
     re = combine(lis)
     return re
-
-
-fun_set_kth_digit(468, 0, 1)
