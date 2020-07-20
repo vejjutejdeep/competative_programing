@@ -5,6 +5,7 @@
 def mostfrequentdigit(n):
     # your code goes
     d = {}
+    flag = False
     val = str(n)
     for ele in range(len(val)):
         if ele not in d:
@@ -18,3 +19,6 @@ def mostfrequentdigit(n):
         return(Keymax)
     print(min(d))
     return min(d)
+
+
+mostfrequentdigit(5231123123123)
