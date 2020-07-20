@@ -18,4 +18,4 @@ def largestperfectsquare(n):
     print(math.floor(math.sqrt(n)) ** 2)
 
 
-largestperfectsquare(24)
+largestperfectsquare(26)
