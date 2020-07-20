@@ -19,8 +19,8 @@ def ishappynumber(n):
     # your code goes here
     if n <= 0:
         return False
-        if n == 1:
-            return True
+    if n == 1:
+        return True
     visited = []
     while n != 1:
         s = sum(int(i) ** 2 for i in str(n))
