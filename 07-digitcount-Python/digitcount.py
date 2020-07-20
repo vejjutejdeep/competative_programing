@@ -10,8 +10,8 @@ def digitcount(n):
     count = 0
     if n < 0:
         n = -n
-        if n == 0:
-            return 1
+    elif n == 0:
+        return 1
     while n != 0:
         n = n // 10
         count = count + 1
@@ -19,4 +19,4 @@ def digitcount(n):
     return count
 
 
-digitcount(-24)
+digitcount(0)
