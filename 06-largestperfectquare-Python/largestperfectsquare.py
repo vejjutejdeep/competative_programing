@@ -8,5 +8,11 @@
 # Another hint: This can be written using just one or two lines of Python.
 
 def largestperfectsquare(n):
-	# your code goes here
-	pass
+    # your code goes here
+    count = 1
+    while(count ** 2 < n):
+        count += 1
+    print(count - 1)
+
+
+largestperfectsquare(26)
