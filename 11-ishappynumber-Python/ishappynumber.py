@@ -29,7 +29,6 @@ def solve(n, visited):
         su = su + ((n % 10) ** 2)
         n = n // 10
     print(su)
-    print(visited)
     solve(n, visited)
 
 
