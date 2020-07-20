@@ -15,7 +15,7 @@ def largestperfectsquare(n):
     # while(count ** 2 < n):
     #     count += 1
     # print(count - 1)
-    print(math.floor(math.sqrt(n)))
+    print(math.floor(math.sqrt(n)) ** 2)
 
 
 largestperfectsquare(24)
