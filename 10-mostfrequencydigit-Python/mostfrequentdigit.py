@@ -17,10 +17,13 @@ def mostfrequentdigit(n):
             d[val[ele]] += 1
         print(d)
     if flag == True:
-        Keymax = max(d, key=lambda x: d[x])
-        print(Keymax)
-        return(Keymax)
-    print("no repeat ", min(d))
+        v = list(d.values())
+
+        # taking list of car keys in v
+        f = list(d.keys())
+
+        print(f[v.index(max(v))])
+    print(min(d))
     return min(d)
 
 
