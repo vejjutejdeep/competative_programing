@@ -12,7 +12,6 @@ def digitcount(n):
         return 1
     if n < 0:
         n = -n
-
     while n != 0:
         n = n // 10
         count = count + 1
