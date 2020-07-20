@@ -8,8 +8,8 @@ import math
 def fun_threelines_area(a, b, c):
     s = (a + b + c) / 2
     area = math.sqrt(s * (s - a) * (s - b) * (s - c))
-    print(round(area))
-    return 0
+    print(math.floor(area))
+    return math.floor(area)
 
 
-fun_threelines_area(12, 10, 8)
+fun_threelines_area(16, 12, 11)
