@@ -25,18 +25,20 @@ def solve(n, visited):
         return False
     visited.append(n)
     su = 0
+    print("before", n)
     while n != 0:
         su = su + ((n % 10) ** 2)
         n = n // 10
     print(su)
-    solve(n, visited)
+    solve(su, visited)
 
 
 def ishappynumber(n):
     # your code goes here
     if n <= 0:
         return False
+        print(solve(n, []))
     return (solve(n, []))
 
 
-ishappynumber(19)
+ishappynumber(2)
