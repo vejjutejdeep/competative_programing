@@ -16,7 +16,7 @@
 def solve(n, visited):
     if n == 1:
         print("True")
-    return True
+        return True
     if n == 4:
         print("False")
     return False
@@ -35,3 +35,4 @@ def ishappynumber(n):
     # your code goes here
     if n <= 0:
         return False
+    return (solve(n, []))
