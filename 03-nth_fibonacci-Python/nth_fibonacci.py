@@ -16,4 +16,4 @@ def fun_nthfibonaccinumber(n):
     return fun_nthfibonaccinumber(count - 1) + fun_nthfibonaccinumber(count - 2)
 
 
-fun_nthfibonaccinumber(10)
+print(fun_nthfibonaccinumber(10))
