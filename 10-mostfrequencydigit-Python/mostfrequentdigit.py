@@ -26,8 +26,8 @@ def mostfrequentdigit(n):
                 val.append(k[ele])
         print(int(min(val)))
         return int(min(val))
-        print(int(min(d)))
-        return int(min(d))
+    print(int(min(d)))
+    return int(min(d))
 
 
 mostfrequentdigit(24)
