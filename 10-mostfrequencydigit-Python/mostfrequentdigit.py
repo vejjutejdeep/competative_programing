@@ -8,16 +8,19 @@ def mostfrequentdigit(n):
     flag = False
     val = str(n)
     for ele in range(len(val)):
-        if ele not in d:
-            d[val] = 0
+        # print(val[ele])
+        if val[ele] not in d:
+            d[val[ele]] = 0
         else:
+
             flag = True
-            d[val] += 1
-    if flag:
+            d[val[ele]] += 1
+        print(d)
+    if flag == True:
         Keymax = max(d, key=lambda x: d[x])
         print(Keymax)
         return(Keymax)
-    print(min(d))
+    print("no repeat ", min(d))
     return min(d)
 
 
