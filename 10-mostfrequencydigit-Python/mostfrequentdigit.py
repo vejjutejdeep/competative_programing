@@ -18,13 +18,16 @@ def mostfrequentdigit(n):
         print(d)
     if flag == True:
         v = list(d.values())
+        k = list(d.keys())
+        m = max(v)
+        val = []
+        for ele in range(len(k)):
+            if d[k[ele]] == m:
+                val.append(k[ele])
+        print(int(min(val)))
+        return int(min(val))
+        print(int(min(d)))
+        return int(min(d))
 
-        # taking list of car keys in v
-        f = list(d.keys())
 
-        print(f[v.index(max(v))])
-    print(min(d))
-    return min(d)
-
-
-mostfrequentdigit(5231123123123)
+mostfrequentdigit(24)
