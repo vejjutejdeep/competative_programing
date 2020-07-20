@@ -13,28 +13,20 @@
 # assert(ishappynumber(98) == False)
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
-def solve(n, visited):
-    if n == 1:
-        return True
-    if n == 4:
-        # print("False")
-        return False
-    if n in visited:
-        return False
-    visited.append(n)
-    su = 0
-    while n != 0:
-        su = su + ((n % 10) ** 2)
-        n = n // 10
-    solve(su, visited)
 
 
 def ishappynumber(n):
     # your code goes here
     if n <= 0:
         return False
-    print(solve(n, []))
-    return (solve(n, []))
+    visited = []
+    while n != 1:
+        s = sum(int(i) ** 2 for i in str(n))
+        if s in visited:
+            return False
+        if s == 4:
+            return False
+    return True
 
 
-ishappynumber(2)
+print(ishappynumber(2))
