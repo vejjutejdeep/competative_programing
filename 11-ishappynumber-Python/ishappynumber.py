@@ -15,21 +15,17 @@
 # assert(ishappynumber(405) == False)
 def solve(n, visited):
     if n == 1:
-        print("True")
         return True
     if n == 4:
-        print("False")
+        # print("False")
         return False
     if n in visited:
-        print("False")
         return False
     visited.append(n)
     su = 0
-    print("before", n)
     while n != 0:
         su = su + ((n % 10) ** 2)
         n = n // 10
-    print(su)
     solve(su, visited)
 
 
@@ -37,7 +33,7 @@ def ishappynumber(n):
     # your code goes here
     if n <= 0:
         return False
-        print(solve(n, []))
+    print(solve(n, []))
     return (solve(n, []))
 
 
