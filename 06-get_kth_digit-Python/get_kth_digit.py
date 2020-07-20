@@ -7,7 +7,7 @@
 def fun_get_kth_digit(digit, k):
     if(digit < 0):
         digit = -digit
-    if (len(str(digit))):
+    if (len(str(digit)) <= k):
         return 0
     n = digit
     cout = 0
