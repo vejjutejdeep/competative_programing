@@ -19,4 +19,4 @@ def numberofpoolballs(rows):
     return su
 
 
-numberofpoolballs(10)
+numberofpoolballs(15)
