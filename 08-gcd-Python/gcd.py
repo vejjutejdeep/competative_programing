@@ -12,9 +12,9 @@ import math
 
 def gcd(m, n):
     # your code goes here
-    if min(m, n) == m:
-        return math.ceil(m/n)
-    gcd(n, m % n)
+    if n == 0:
+        return m
+    return gcd(n, m % n)
 
 
 print(gcd(2, 3))
