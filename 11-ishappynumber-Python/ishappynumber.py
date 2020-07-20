@@ -22,11 +22,12 @@ def ishappynumber(n):
     visited = []
     while n != 1:
         s = sum(int(i) ** 2 for i in str(n))
+        visited.append(s)
         if s in visited:
             return False
         if s == 4:
             return False
-    return True
+        return True
 
 
-print(ishappynumber(2))
+print(ishappynumber(404))
