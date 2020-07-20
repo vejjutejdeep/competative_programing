@@ -23,12 +23,12 @@ def solve(n, visited):
     if n in visited:
         print("False")
         return False
+    visited.append(n)
     su = 0
     while n != 0:
         su = su + ((n % 10) ** 2)
         n = n // 10
     print(su)
-    visited.append(su)
     print(visited)
     solve(n, visited)
 
