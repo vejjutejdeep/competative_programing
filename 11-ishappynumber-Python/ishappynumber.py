@@ -19,7 +19,7 @@ def solve(n, visited):
         return True
     if n == 4:
         print("False")
-    return False
+        return False
     if n in visited:
         print("False")
         return False
