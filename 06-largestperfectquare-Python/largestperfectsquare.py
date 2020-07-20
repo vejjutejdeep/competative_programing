@@ -16,6 +16,7 @@ def largestperfectsquare(n):
     #     count += 1
     # print(count - 1)
     print(math.floor(math.sqrt(n)) ** 2)
+    return (math.floor(math.sqrt(n)) ** 2)
 
 
 largestperfectsquare(26)
