@@ -12,9 +12,10 @@ import math
 def fun_find_int_roots(a, b, c):
     root1 = (-b + (((b ** 2) - (4 * a * c)) ** 0.5)) / 2 * a
     root2 = (-b - (math.sqrt((b ** 2) - (4 * a * c)))) / 2 * a
-    roots = [root1, root2]
-    print(roots.sort())
-    return (roots.sort())
+    roots = [int(root1), int(root2)]
+    roots = sorted(roots)
+    print(tuple(roots))
+    return (tuple(roots))
 
 
-fun_find_int_roots(1, -5, 6)
+fun_find_int_roots(1, -6, 8)
