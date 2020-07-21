@@ -9,10 +9,10 @@ def median(a):
     # your code goes here
     if len(a) % 2 != 0:
         return a[len(a) // 2]
-    print(len(a)/2)
-    print(a[math.ceil(len(a) / 2)])
-    me = (a[math.ceil(len(a) / 2)] + a[math.floor(len(a) / 2)]) / 2
-    print(me)
+    # print()
+    print(a[(len(a) // 2) - 1])
+    # me = (a[(len(a) / 2)] + a[(len(a) / 2) + 1]) / 2
+    # print(me)
 
 
 median([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
