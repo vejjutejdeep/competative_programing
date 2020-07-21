@@ -9,10 +9,12 @@ def isrotated(str1, str2):
     if len(str2) != len(str1):
         return False
     temp = str1 + str1
+    print(str2)
+    print(temp.count(str2))
     if temp.count(str2) > 0:
         return True
     else:
         return False
 
 
-print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
+print(isrotated('12345', '54321'))
