@@ -14,16 +14,7 @@ def fun_applycaesarcipher(msg, shift):
     con = ""
     for ele in msg:
         if ele != " ":
-            if ord(ele) == 95:
-                con = con + chr(122 + shift)
-                print(chr(122 + shift))
-                continue
-            con = con + chr(ord(ele) + shift)
-            print(chr(ord(ele) + shift))
-        else:
-            con = con + " "
-    print(con)
-    return ""
-
-
-fun_applycaesarcipher("zodiac", -2)
+            if (ele.isupper()):
+                con += chr((ord(ele) + shift-65) % 26 + 65)
+            else:
+                con += chr((ord(ele) + shift - 97) % 26 + 97)
