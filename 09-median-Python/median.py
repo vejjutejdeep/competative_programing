@@ -7,12 +7,12 @@ import math
 
 def median(a):
     # your code goes here
+    if len(a) == 0:
+        return None
     if len(a) % 2 != 0:
         return a[len(a) // 2]
-    # print()
-    print(a[(len(a) // 2) - 1])
     me = (a[(len(a) // 2)] + a[(len(a) // 2) - 1]) / 2
-    # print(me)
+    return me
 
 
 median([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
