@@ -15,8 +15,8 @@ def fun_replace(s1, s2, s3):
                 main[i] = two[count]
                 count += 1
             else:
-                lis.append(i)
-        print(main)
+                lis.append(main[i])
+    print(lis)
     if len(lis) != 0:
         for ele in lis:
             main.pop(ele)
