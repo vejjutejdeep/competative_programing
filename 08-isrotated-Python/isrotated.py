@@ -6,16 +6,13 @@
 
 def isrotated(str1, str2):
     # Your code goes here
-    l = len(str2)
-    if l != len(str1):
+    if len(str2) != len(str1):
         return False
-    l = l - 1
-    for ele in range(0, round(len(str1) / 2)):
-        print(str2[l])
-        if str1[ele] != str2[l]:
-            return False
-        l -= 1
-    return True
+    temp = str1 + str1
+    if temp.count(str2) > 0:
+        return True
+    else:
+        return False
 
 
-isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA")
+print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
