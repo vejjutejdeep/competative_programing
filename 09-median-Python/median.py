@@ -11,7 +11,7 @@ def median(a):
         return a[len(a) // 2]
     # print()
     print(a[(len(a) // 2) - 1])
-    # me = (a[(len(a) / 2)] + a[(len(a) / 2) + 1]) / 2
+    me = (a[(len(a) // 2)] + a[(len(a) // 2) - 1]) / 2
     # print(me)
 
 
