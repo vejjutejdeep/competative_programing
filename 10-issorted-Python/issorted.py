@@ -6,15 +6,16 @@
 # the list.
 
 def issorted(a):
-	flag1 = True
-	flag2 = True
-	for i in range(len(a) - 2):
-		if a[i] > a[i + 1]:
-			flag1 = False
-		if a[i] < a[i + 1]:
-			flag2 = False
-	if flag1 or flag2:
-		return True
-	return False
+    flag1 = True
+    flag2 = True
+    for i in range(len(a) - 1):
+        if a[i] > a[i + 1]:
+            flag1 = False
+        if a[i] < a[i + 1]:
+            flag2 = False
+    if flag1 or flag2:
+        return True
+    return False
 
-issorted([1, 2, 3, 4, 5])
+
+print(issorted([10, 9, 8, 7, 6, 5, 4, 3, 2, 10]))
